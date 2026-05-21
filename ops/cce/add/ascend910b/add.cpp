@@ -148,7 +148,7 @@ torch::Tensor add_npu(const torch::Tensor &x, const torch::Tensor &y)
 {
     // OptionalDeviceGuard 确保后续操作在正确的设备上下文执行
  	// 它会记录当前设备状态，执行完作用域代码后自动恢复
-    std::cout << "hello wangsong!! make sure run add_npu \n"; 
+    // std::cout << "hello wangsong!! make sure run add_npu \n"; 
  	const c10::OptionalDeviceGuard guard(x.device());
     auto z = add_meta(x, y);
     auto stream = c10_npu::getCurrentNPUStream().stream(false);
