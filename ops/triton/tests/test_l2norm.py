@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
-from l2norm import L2Norm
+# from l2norm import L2Norm # fast test
+from adt_triton_ops.l2norm import L2Norm
 
 # 设置设备（NPU）
 device = 'npu'

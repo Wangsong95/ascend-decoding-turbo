@@ -288,10 +288,17 @@ print("Verification successful!")
 
 1. 进入`ops/triton`目录。
 
-2. 执行测试。
+2. 执行快速测试。
 
     ```sh
     python tests/test_l2norm.py
+    ```
+
+3. 执行完整测试。
+
+    ```sh
+    bash build_triton.sh # 将本仓的Triton算子编译为Wheel包
+    python */test_*.py
     ```
 
 ## 开发指南：新增一个算子 | Developer Guide: Adding a New Operator
