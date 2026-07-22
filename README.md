@@ -46,9 +46,6 @@
 - **高效调用：** 使用`<<<>>>`语法启动核函数，流程简单高效。
 
 ## 环境部署 | Prerequisites
-- triton 3.5.0
-- 对应版本的[triton-ascend](https://gitcode.com/Ascend/triton-ascend/releases/v3.2.1)
-- 请先参考[环境部署](../../docs/zh/install/quick_install.md)完成基础环境搭建
 - gcc 9.4.0+
 - python 3.8+
 - torch>=2.6.0
@@ -283,6 +280,13 @@ print("Verification successful!")
 
 - **单交付件：** 一个文件完成算子开发和PyTorch框架适配。
 - **高效调用：** 使用`import`语法启动核函数，流程简单高效。
+
+## 环境部署 | Prerequisites
+- triton 3.5.0
+- 对应版本的[triton-ascend](https://gitcode.com/Ascend/triton-ascend/releases/v3.2.1)
+- python 3.8+
+- torch>=2.6.0
+- 对应版本的[torch_npu](https://gitcode.com/Ascend/pytorch/releases)
 
 ## 测试步骤 | Installation Steps
 
